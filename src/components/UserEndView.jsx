@@ -1,6 +1,13 @@
 import React from "react";
 
-function UserEndView({ players }) {
+function UserEndView() {
+	const players = [
+		{ id: 1, name: "Shubham Suman", team: "IITKGP", time: "9.26" },
+		{ id: 2, name: "Himanshu Kumar", team: "IITP", time: "9.32" },
+		{ id: 3, name: "Jayant Singh", team: "IITB", time: "9.35" },
+		{ id: 4, name: "Jitendra Kumar", team: "IITG", time: "9.42" },
+	];
+	
 	return (
 		<div>
 			{players.map((p, index) => {
