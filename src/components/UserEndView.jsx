@@ -1,6 +1,6 @@
 import React from "react";
 
-function UserEndView() {
+const UserEndView=()=> {
 	let players = [
 		{ id: 1, name: "Shubham Suman", team: "IITKGP", time: 9.26 },
 		{ id: 2, name: "Himanshu Kumar", team: "IITP", time: 9.45 },
