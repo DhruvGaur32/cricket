@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #010A0F;
+    color: #FFFFFF; /* Set text color to white for better visibility */
+  }
+  
