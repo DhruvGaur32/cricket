@@ -6,7 +6,17 @@ function UserEndView() {
 		{ id: 2, name: "Himanshu Kumar", team: "IITP", time: 9.32 },
 		{ id: 3, name: "Jayant Singh", team: "IITB", time: 9.35 },
 		{ id: 4, name: "Jitendra Kumar", team: "IITG", time: 9.42 },
+		{ id: 5, name: "Shubman Gill" , team: "IITR" , time: 9.16},
 	];
+	for (let i = 0; i < players.length; i++) {
+		for (let j = 0; j < players.length; j++) {
+			if (players[i].time < players[j].time) {
+				let t = players[i];
+				players[i] = players[j];
+				players[j] = t;
+			}
+		}
+	}
 	
 	return (
 		<div>
@@ -23,12 +33,17 @@ function UserEndView() {
 			</div>
 			
 			{players.map((p, index) => {
+				let l;
+				if (index + 1 === 1) l = "🥇";
+				else if (index + 1 === 2) l = "🥈";
+				else if (index + 1 === 3) l = "🥉";
+				else l = index + 1;
 				return (
 					<>
-						<div className="flex items-center ml-[15%] mt-[2%] md:hidden">
-							<div className="container flex items-center  ">
-								<div className="text-2xl flex justify-center items-center ">{index + 1}</div>
-								<div className="containerItem ml-[18%]">
+						<div className="flex items-center mt-[2%] md:hidden">
+							<div className="container grid grid-cols-2  ">
+								<div className="text-4xl flex justify-center items-center ">{l}</div>
+								<div className="containerItem ">
 									<div className="text-2xl ">{p.name}</div>
 									<div className="">{p.team}</div>
 									<div className="">Result: {p.time}</div>
@@ -38,11 +53,10 @@ function UserEndView() {
 
 						{/* After Medium */}
 						<div className="ml-[8%] mr-[8%] hidden md:block lg:ml-[6%] lg:mr-[6%]">
-							<div className="grid grid-cols-4 gap-4 m-2 place-items-center">
-								<div className="text-2xl">{index + 1}</div>
+							<div className="grid grid-cols-4 m-2 place-items-center">
+								<div className="text-4xl">{l}</div>
 								<div className="text-xl">{p.team}</div>
 								<div className="text-2xl">{p.name}</div>
-
 								<div className="text-xl">{p.time}</div>
 							</div>
 						</div>
