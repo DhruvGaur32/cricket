@@ -1,6 +1,7 @@
 import React from 'react';
 import Bowling from './components/Bowling';
 import Batting from './components/Batting';
+import Scoreboard from './components/Cricket';
 // import './App.css';
 
 const bowlingData = [
@@ -31,8 +32,7 @@ const App = () => {
                 <h1>Live Scoring</h1>
             </header>
            
-      <Batting data={battingData} />
-      <Bowling data={bowlingData} />
+      <Scoreboard/>
     </div>
   );
 };
