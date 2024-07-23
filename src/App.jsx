@@ -2,9 +2,12 @@ import React from 'react';
 import Bowling from './components/Bowling';
 import Batting from './components/Batting';
 import Scoreboard from './components/Cricket';
+<<<<<<< HEAD
 
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
+=======
+>>>>>>> 6d036e8e6e42d2ce6a8fe75db8c4536e85345402
 // import './App.css';
 
 
@@ -14,6 +17,7 @@ const App = () => {
       <div className="App">
     <Router>
        <header className="App-header">
+<<<<<<< HEAD
                 
 
         <nav>
@@ -36,6 +40,13 @@ const App = () => {
     </Router>
       </div>
 
+=======
+                <h1>Live Scoring</h1>
+            </header>
+           
+      <Scoreboard/>
+    </div>
+>>>>>>> 6d036e8e6e42d2ce6a8fe75db8c4536e85345402
   );
 };
 
