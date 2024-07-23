@@ -2,16 +2,16 @@ import React from 'react';
 
 const Bowling = ({ data }) => {
   return (
-    <div className="bowling-section my-5">
+    <div className="bowling-section my-5 w-90% p-4">
       <h2 className="text-left text-2xl font-bold">BOWLING</h2>
       <table className="w-full border-collapse mt-2">
         <thead>
           <tr>
-            <th className="border border-gray-300 p-2 bg-gray-100 font-bold">Bowler</th>
-            <th className="border border-gray-300 p-2 bg-gray-100 font-bold">O</th>
-            <th className="border border-gray-300 p-2 bg-gray-100 font-bold">R</th>
-            <th className="border border-gray-300 p-2 bg-gray-100 font-bold">W</th>
-            <th className="border border-gray-300 p-2 bg-gray-100 font-bold">ER</th>
+            <th className="border border-gray-400 p-2 bg-gray-100 font-bold text-center">Bowler</th>
+            <th className="border border-gray-400 p-2 bg-gray-100 font-bold">O</th>
+            <th className="border border-gray-400 p-2 bg-gray-100 font-bold">R</th>
+            <th className="border border-gray-400 p-2 bg-gray-100 font-bold">W</th>
+            <th className="border border-gray-400 p-2 bg-gray-100 font-bold">ER</th>
           </tr>
         </thead>
         <tbody>
