@@ -7,7 +7,7 @@ const Bowling = ({ data }) => {
       <table className="w-full border-collapse mt-2">
         <thead>
           <tr>
-            <th className="border border-gray-400 p-2 bg-gray-100 font-bold text-center">Bowler</th>
+            <th className="border border-gray-400 p-2 bg-gray-100 font-bold text-center ">Bowler</th>
             <th className="border border-gray-400 p-2 bg-gray-100 font-bold">O</th>
             <th className="border border-gray-400 p-2 bg-gray-100 font-bold">R</th>
             <th className="border border-gray-400 p-2 bg-gray-100 font-bold">W</th>
