@@ -33,13 +33,13 @@ const App = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/">Score Editing</Link>
+              <Link to="/" className='bg-sky-500/100 rounded-xl p-1 font-bold'>Score Editing</Link>
             </li>
             <li>
-              <Link to="/scoreboard">Scoreboard Table</Link>
+              <Link to="/scoreboard" className='bg-sky-500/100 rounded-xl p-1 font-bold'>Scoreboard Table</Link>
             </li>
             <li>
-              <Link to="/modal">Scoreboard Modal</Link>
+              <Link to="/modal" className='bg-sky-500/100 rounded-xl p-1 font-bold'>Scoreboard Modal</Link>
             </li>
           </ul>
         </nav>
@@ -74,22 +74,7 @@ const App = () => {
               />
             }
           />
-          <Route
-            path="/scoreboard"
-            element={
-              <ScoreboardTablePage
-                batsmen={batsmen}
-                bowlers={bowlers}
-                score={score}
-                wickets={wickets}
-                overs={overs}
-                balls={balls}
-                extras={extras}
-                currentBatsmen={currentBatsmen}
-                currentBowler={bowlers[currentBowlerIndex]}
-              />
-            }
-          />
+
           <Route
             path="/modal"
             element={
@@ -107,6 +92,24 @@ const App = () => {
               />
             }
           />
+          <Route
+            path="/scoreboard"
+            element={
+              <ScoreboardTablePage
+                batsmen={batsmen}
+                bowlers={bowlers}
+                score={score}
+                wickets={wickets}
+                overs={overs}
+                balls={balls}
+                extras={extras}
+                currentBatsmen={currentBatsmen}
+                currentBowler={bowlers[currentBowlerIndex]}
+                currentBowlerIndex={currentBowlerIndex}  // Pass this prop as well
+              />
+            }
+          />
+
         </Routes>
       </div>
     </Router>
